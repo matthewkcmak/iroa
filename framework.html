@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>四維框架 — IROA</title>
+<meta name="description" content="IROA 四維角色框架詳解：Initiator、Reviewer、Orchestrator、Aligner 的協作矩陣、動態循環、實戰檢核表與契約法則。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="index.html">IROA</a>
+  <nav>
+    <a href="index.html">首頁</a>
+    <a href="framework.html" class="here">四維框架</a>
+    <a href="courses.html">必修課系列</a>
+  </nav>
+</header>
+
+<main>
+  <h1>四維框架</h1>
+  <blockquote>成功的關鍵，不在 Prompt 的長度，而在人與 AI 之間的<strong>契約法則</strong>。</blockquote>
+
+  <p>IROA 把「人類與 AI 的互動」拆成四個角色。AI 是力量的放大器——它放大你的意圖、你的把關、你的整合、你的價值觀。四個角色定義了 AI 時代人類的核心價值：<strong>確保我們不是被 AI 取代，而是進化。</strong></p>
+
+  <h2>協作矩陣</h2>
+  <table>
+    <tr><th>角色</th><th>描述</th><th>必備技能</th></tr>
+    <tr><td><strong>Initiator</strong><br>意圖的建築師</td><td>人類主動定義意圖，AI 被動等待指令。意圖是整個過程的起點</td><td>洞察力、精準表達力、領域知識</td></tr>
+    <tr><td><strong>Reviewer</strong><br>品質的守門人</td><td>AI 負責生成，人類負責把關</td><td>批判思維、事實查核、邏輯判斷</td></tr>
+    <tr><td><strong>Orchestrator</strong><br>系統的指揮家</td><td>人類是指揮家，整合 AI 的產出物</td><td>系統思維、資源管理、跨領域整合</td></tr>
+    <tr><td><strong>Aligner</strong><br>靈魂的注入者</td><td>AI 給出平均值，人類賦予靈魂。從 Generic 到 Specific</td><td>同理心、審美判斷、價值觀對齊</td></tr>
+  </table>
+
+  <h2>動態循環（非線性流程）</h2>
+  <p>一次協作中會在四種思維模式間反覆切換：</p>
+  <svg class="diagram" width="520" height="200" viewBox="0 0 520 200" role="img" aria-label="IROA 四角色動態循環圖">
+    <defs>
+      <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+        <path d="M0,0 L6,3 L0,6 z" fill="#8a6d3b"></path>
+      </marker>
+    </defs>
+    <g font-family="sans-serif" font-size="14" text-anchor="middle">
+      <rect x="20" y="80" width="105" height="44" rx="8" fill="#f7f3ec" stroke="#8a6d3b"></rect>
+      <text x="72" y="107" fill="#222">Initiator</text>
+      <rect x="195" y="80" width="105" height="44" rx="8" fill="#f7f3ec" stroke="#8a6d3b"></rect>
+      <text x="247" y="107" fill="#222">Reviewer</text>
+      <rect x="370" y="80" width="105" height="44" rx="8" fill="#f7f3ec" stroke="#8a6d3b"></rect>
+      <text x="422" y="107" fill="#222">Orchestrator</text>
+      <rect x="195" y="10" width="105" height="44" rx="8" fill="#f7f3ec" stroke="#8a6d3b"></rect>
+      <text x="247" y="37" fill="#222">Aligner</text>
+    </g>
+    <g stroke="#8a6d3b" stroke-width="1.6" fill="none" marker-end="url(#arrow)">
+      <path d="M125 102 L188 102"></path>
+      <path d="M300 102 L363 102"></path>
+      <path d="M422 80 C 400 45, 340 32, 303 32"></path>
+      <path d="M195 32 C 140 32, 90 50, 72 78"></path>
+    </g>
+    <g font-family="sans-serif" font-size="11.5" fill="#666" text-anchor="middle">
+      <text x="157" y="94">定義邊界</text>
+      <text x="331" y="94">確保品質</text>
+      <text x="373" y="50">系統整合</text>
+      <text x="128" y="52">賦予靈魂</text>
+    </g>
+  </svg>
+  <ol>
+    <li><strong>Initiator：定義問題的邊界。</strong>不只下指令，而是釐清目的、設定成功標準、提供背景。起點模糊，後續全部要花時間修正方向。</li>
+    <li><strong>Reviewer：確保品質的防線。</strong>保持懷疑論者態度——AI 會自信地錯。檢查事實、邏輯、是否符合 Initiator 設定的目標。</li>
+    <li><strong>Orchestrator：系統化整合。</strong>關注「整體大於部分之和」——資源調度、流程拆解、跨領域組裝。</li>
+    <li><strong>Aligner：賦予靈魂與價值。</strong>注入人類獨特性——審美與風格、價值觀對齊、情感連結。這是區分「AI 生成內容」與「高品質作品」的關鍵。</li>
+  </ol>
+
+  <h2>實戰檢核表</h2>
+  <div class="checklist">
+    <p>☑ 目標與背景清楚了嗎？</p>
+    <p>☑ 事實與邏輯查了嗎？</p>
+    <p>☑ 資源與步驟整合了嗎？</p>
+    <p>☑ 獨特觀點與情感賦予了嗎？</p>
+  </div>
+
+  <h2>契約法則：四句口訣</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Initiator</h3>
+      <p>主動定義、拒絕被動</p>
+    </div>
+    <div class="card">
+      <h3>Reviewer</h3>
+      <p>嚴格把關、拒絕盲從</p>
+    </div>
+    <div class="card">
+      <h3>Orchestrator</h3>
+      <p>全局指揮、拒絕混亂</p>
+    </div>
+    <div class="card">
+      <h3>Aligner</h3>
+      <p>注入靈魂、拒絕平庸</p>
+    </div>
+  </div>
+
+  <h2>鏡像雙生：善惡的抉擇</h2>
+  <p>AI 是力量的放大器，它不分善惡，只看使用者的內心。<strong>善用</strong>——創造價值、解決問題、輔助人類——成為傳奇召喚師；<strong>濫用</strong>——製造垃圾內容、散播虛假資訊、懶惰依賴——成為數碼死靈法師。四個角色既是能力，也是選擇。</p>
+
+  <div class="cta-row">
+    <a class="btn primary" href="courses.html">到必修課系列實踐 →</a>
+    <a class="btn" href="index.html">回到首頁</a>
+  </div>
+</main>
+
+<footer>
+  © 2026 IROA · <a href="https://iroa.dev">iroa.dev</a> · 原始碼 <a href="https://github.com/matthewkcmak/iroa">github.com/matthewkcmak/iroa</a>
+</footer>
+</body>
+</html>

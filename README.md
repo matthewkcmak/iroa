@@ -28,7 +28,7 @@ IROA 已於多場工作坊公開發表，包括「AI 時代的必修課」系列
 
 - **主庫**：`github.com/now2c/iroa`（私有，主要開發）
 - **鏡像**：`github.com/matthewkcmak/iroa`（公開，訪客入口）
-- **網站**：[iroa.dev](https://iroa.dev)（GitHub Pages，部署於鏡像 repo）
+- **網站**：[iroa.dev](https://iroa.dev)（Cloudflare Pages，接鏡像 repo 自動部署）
 
 所有內容在主庫開發，push 後自動鏡像至公開 repo。**這是鏡像庫，外部 PR 請改開 Issue，維護者會從主庫合入。**
 

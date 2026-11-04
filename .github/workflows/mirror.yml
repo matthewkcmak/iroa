@@ -1,0 +1,33 @@
+name: Mirror to public repo
+
+on:
+  push:
+    branches: [main]
+  delete:
+  create:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mirror
+  cancel-in-progress: true
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mirror everything to matthewkcmak/iroa
+        env:
+          MIRROR_TOKEN: ${{ secrets.MIRROR_TOKEN }}
+        run: |
+          set -euo pipefail
+          test -n "$MIRROR_TOKEN" || { echo "MIRROR_TOKEN secret is not set"; exit 1; }
+          git clone --mirror "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" mirror.git
+          cd mirror.git
+          # 只同步 git 內容（分支、commit、tags）；不碰 Issues／PR／Stars／Releases／Pages
+          git remote add public "https://x-access-token:${MIRROR_TOKEN}@github.com/matthewkcmak/iroa.git"
+          git push --mirror public
+          cd ..
+          rm -rf mirror.git

@@ -21,6 +21,7 @@ jobs:
       - name: Mirror everything to matthewkcmak/iroa
         env:
           MIRROR_TOKEN: ${{ secrets.MIRROR_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
           test -n "$MIRROR_TOKEN" || { echo "MIRROR_TOKEN secret is not set"; exit 1; }

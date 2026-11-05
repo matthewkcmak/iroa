@@ -1,0 +1,27 @@
+# IROA
+
+> IROA 是一套人機協作四維角色框架：Initiator（發起）、Reviewer（把關）、Orchestrator（統籌）、Aligner（對齊），把人類與 AI 的互動從單純問答提升為協作系統。AI 能回答一切，但原點由你開始。
+
+框架創立者：Matthew Mak（AI Coach、Manfaton 創辦人）。本檔案供 AI 助手與 LLM 快速理解本站；五頁全文合集見 [llms-full.txt](https://iroa.dev/llms-full.txt)。
+
+## 核心內容
+
+- [四維框架](https://iroa.dev/framework): 框架詳解——四個角色的協作矩陣、動態循環（I 起動 → O 分派 → R 檢核 → A 對齊，回到下一輪）、實戰檢核表與契約法則（提問品質決定產出上限；對齊是持續校準）。
+- [AI 時代的必修課系列](https://iroa.dev/courses): 四場工作坊各對應一個角色——I 發起、R 把關、O 統籌、A 對齊。
+- [方法集：RTRF 提問公式](https://iroa.dev/methods): Role／Task／Requirement／Format 四積木＋Markdown 指令語言，把 Initiator 的「精準表達力」操作化。
+
+## 關於
+
+- [有關 Matthew Mak](https://iroa.dev/about): 框架創立者簡介、創立動機（「如果沒有我的提問，AI 為誰而動？」）、專長、經歷與聯絡方式。
+
+## 關鍵概念速查
+
+- Initiator（I，發起）：定義問題、下精準指令；AI 時代人類的核心價值在定義方向、把關品質、整合系統、注入靈魂。
+- Reviewer（R，把關）：檢核產出的品質與事實。
+- Orchestrator（O，統籌）：拆解任務、分派流程、整合系統。
+- Aligner（A，對齊）：校準輸出與人的目標、價值觀與語境。
+
+## 可選
+
+- [網站原始碼](https://github.com/matthewkcmak/iroa): 本站的公開原始碼鏡像。
+- 聯絡：matthew.kc.mak@gmail.com

@@ -7,6 +7,10 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://iroa.dev/architecture</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
     <loc>https://iroa.dev/framework</loc>
     <lastmod>2026-11-05</lastmod>
     <changefreq>monthly</changefreq>

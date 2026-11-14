@@ -16,6 +16,8 @@ concurrency:
 
 jobs:
   mirror:
+    # 只在主庫執行；鏡像庫收到 push 後觸發的同名 workflow 副本一律跳過（secrets 不隨鏡像走）
+    if: github.repository == 'now2c/iroa'
     runs-on: ubuntu-latest
     steps:
       - name: Mirror everything to matthewkcmak/iroa
